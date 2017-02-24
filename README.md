@@ -1,4 +1,16 @@
 # alexatemplate
+## Rationale
+
+Provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.   
+ClojureScript offers the simplicty and tidyness of Clojure without the long startup time of the JVM.
+It also gains the benefits of the Google Closure compiler's advanced features.
+
+## Prerequisites 
+
+You will need to set up Amazon Web Services CLI on your machine.
+http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+You will also need Leiningen
+https://leiningen.org/
 
 ## Deploying
 
@@ -15,14 +27,37 @@ Then:
 
 ```sh
 $ lein cljs-lambda deploy
-$ lein cljs-lambda invoke work-magic ...
 ```
 
-## Testing
+## Configuring your Alexa skill
 
-```sh
-lein doo node alexatemplate-test
+Go to the AWS lambda Console
+https://console.aws.amazon.com/lambda/home?region=us-east-1
+Select your function  (alexa-magic)
+Click on the triggers tab
+Click on the input box, and select Alexa Skills kit.
+
+Go to the Alexa Skill kit and Add your new skill  
+https://developer.amazon.com/edw/home.html#/skills/list
+
+Configure your intents like this:
+```{
+  "intents": [
+    {
+      "intent": "GetHello"
+    },
+    {
+      "intent": "GetGoodbye"
+    }
+  ]
+}
 ```
 
-Doo is provided to avoid including code to set the process exit code after a
- test run.
+Configure your utterences like this:
+
+```
+GetHello  Hi 
+GetHello  Hello 
+GetGoodbye goodbye 
+GetGoodbye Bye 
+```
