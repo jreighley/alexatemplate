@@ -1,9 +1,9 @@
-# alexa skills template
+# Alexa Skills Template
 ## Rationale
 
-Provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.   
-ClojureScript offers the simplicty and tidyness of Clojure without the long startup time of the JVM.
-It also gains the benefits of the Google Closure compiler's advanced features.
+The purpouse of this repository is to provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.
+
+ClojureScript offers the simplicty and tidyness of Clojure without the long startup time of the JVM.  It also gains the benefits of the Google Closure compiler's advanced features.
 
 ## Prerequisites 
 
