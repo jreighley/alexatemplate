@@ -1,4 +1,4 @@
-# alexatemplate
+# alexa skills template
 ## Rationale
 
 Provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.   
