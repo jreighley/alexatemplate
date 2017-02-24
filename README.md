@@ -7,10 +7,9 @@ ClojureScript offers the simplicty and tidyness of Clojure without the long star
 
 ## Prerequisites 
 
-You will need to set up Amazon Web Services CLI on your machine.
-http://docs.aws.amazon.com/cli/latest/userguide/installing.html
-You will also need Leiningen
-https://leiningen.org/
+You will need to set up [Amazon Web Services CLI] (http://docs.aws.amazon.com/cli/latest/userguide/installing.html) on your machine.   All Alexa Skills are hosted out of the US-EAST-1, so you will want to set your configuration accordingly.
+
+You will also need [Leiningen] (https://leiningen.org/)
 
 ## Deploying
 
@@ -31,14 +30,13 @@ $ lein cljs-lambda deploy
 
 ## Configuring your Alexa skill
 
-Go to the AWS lambda Console
-https://console.aws.amazon.com/lambda/home?region=us-east-1
+Go to the [AWS lambda Console] (https://console.aws.amazon.com/lambda/home?region=us-east-1)
 Select your function  (alexa-magic)
 Click on the triggers tab
 Click on the input box, and select Alexa Skills kit.
 
-Go to the Alexa Skill kit and Add your new skill  
-https://developer.amazon.com/edw/home.html#/skills/list
+Go to the in the amazon developers tools go to the [Alexa Skills list] (https://developer.amazon.com/edw/home.html#/skills/list) and add your new skill.  
+
 On the Interaction tab:
 
 Configure your intents like this:
