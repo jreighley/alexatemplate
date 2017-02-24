@@ -39,9 +39,11 @@ Click on the input box, and select Alexa Skills kit.
 
 Go to the Alexa Skill kit and Add your new skill  
 https://developer.amazon.com/edw/home.html#/skills/list
+On the Interaction tab:
 
 Configure your intents like this:
-```{
+```
+{
   "intents": [
     {
       "intent": "GetHello"
@@ -56,8 +58,23 @@ Configure your intents like this:
 Configure your utterences like this:
 
 ```
-GetHello  Hi 
-GetHello  Hello 
-GetGoodbye goodbye 
+GetHello  Hi
+GetHello  Hello
+GetGoodbye goodbye
 GetGoodbye Bye 
 ```
+
+On the Configuration tab, 
+Select AWS Lambda ARN (Amazon Resource Name)
+Enter you ARN --  You can find this in the upper right of your the AWS lambda Console
+
+On the test tab:
+Test with Hello, Goodbye,  Open.  
+
+Modify your functions as you desire.  
+Save your files then 
+
+```
+lein cljs-lambda deploy
+```
+Will compile and deploy your changes.  
