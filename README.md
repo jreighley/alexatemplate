@@ -71,10 +71,14 @@ Enter you ARN --  You can find this in the upper right of your the AWS lambda Co
 On the test tab:
 Test with Hello, Goodbye,  Open.  
 
-Modify your functions as you desire.  
+## Program Away!
+Modify your core.cljs functions as you desire.  
+
 Save your files then 
 
 ```
 lein cljs-lambda deploy
 ```
-Will compile and deploy your changes.  
+Will re-compile and deploy your changes.   Test and repeat until happy!
+
+
