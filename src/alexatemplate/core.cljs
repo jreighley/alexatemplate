@@ -21,3 +21,6 @@
      (= (:intent reqestdetails) "GetHello") {:version 1.0 :response {:outputSpeech {:type "PlainText" :text "HELLO!"  }:shouldEndSession false}}
      (= (:intent reqestdetails) "GetGoodbye") {:version 1.0 :response {:outputSpeech {:type "PlainText" :text "BYE!"  }:shouldEndSession false}}
      :else {:version 1.0 :response {:outputSpeech {:type "PlainText" :text "Welcome Clojurescript!"  }:shouldEndSession false}})))
+
+     ;; You can replace these response maps with calls to other functions that return similar maps.  The maps should correspond to the JSON requirements set forth
+     ;; here:   https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference#response-format
