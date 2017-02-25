@@ -1,7 +1,7 @@
 # Alexa Skills Template
 ## Rationale
 
-The purpose of this repository is to provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.
+The purpose of this repository is to provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.  It gives you a very simple working example so that you can start writing the business of your program, without having to fight trough the "getting it working" puzzles.
 
 ClojureScript offers the simplicty and tidyness of Clojure without the long startup time of the JVM.  It also gains the benefits of the Google Closure compiler's advanced features.
 
@@ -70,7 +70,7 @@ On the test tab:
 Test with Hello, Goodbye,  Open.  
 
 ## Program Away!
-Modify your core.cljs functions as you desire.  
+Modify your core.cljs functions to satisfy your goals.  
 
 Save your files then 
 
