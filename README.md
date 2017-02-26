@@ -1,4 +1,6 @@
 # Alexa Skills Template
+[![Clojars Project](https://img.shields.io/clojars/v/alexalambda/lein-template.svg)](https://clojars.org/alexalambda/lein-template)
+
 ## Rationale
 
 The purpose of this repository is to provide a starting point for building AWS Lambda based Alexa skills with Clojurescript.  It gives you a very simple working example so that you can start writing the business of your program, without having to fight trough the "getting it working" puzzles.
