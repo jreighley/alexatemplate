@@ -11,6 +11,14 @@ You will need to set up [Amazon Web Services CLI] (http://docs.aws.amazon.com/cl
 
 You will also need [Leiningen] (https://leiningen.org/)
 
+## Getting Started
+Run:
+
+```
+lein new alexalambda projectname
+```
+This builds a simple starter project
+
 ## Deploying
 
 Run `lein cljs-lambda default-iam-role` if you don't have yet have suitable
