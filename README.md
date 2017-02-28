@@ -37,6 +37,7 @@ Then:
 ```sh
 $ lein cljs-lambda deploy
 ```
+This compiles your program and uploads it to AWS lambda.
 
 ## Configuring your Alexa skill
 
